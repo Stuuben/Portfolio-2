@@ -1,0 +1,77 @@
+.home-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  margin-top: -80px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.me-img {
+  background-image: url(../assets/jagjag.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 3px 3px 5px 5px;
+  position: relative;
+
+  color: black;
+}
+
+.content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(0, 183, 255);
+  text-shadow: 1px 2px 6px #000;
+  font-size: 42px;
+}
+
+.icons {
+  padding: 1rem;
+}
+
+.github-icon {
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  color: rgb(255, 255, 255);
+  &:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+  }
+}
+
+.linkedin-icon {
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  color: rgb(0, 183, 255);
+  &:hover {
+    transition: 0.3s ease;
+    transform: scale(1.1);
+  }
+}
+.cv-icon {
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  color: rgb(0, 183, 255);
+  &:hover {
+    transition: 0.3s ease;
+    transform: scale(1.1);
+  }
+}
