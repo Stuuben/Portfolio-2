@@ -1,17 +1,13 @@
-import { Home } from "./components/Home";
+import { Home } from "./pages/Home";
 
 import "./app.scss";
-import BurgerMenu from "./components/BurgerMenu";
-import { Contact } from "./components/Contact";
-import { About } from "./components/About";
+import { RouterProvider } from "react-router";
+import { router } from "./Router";
 
 function App() {
   return (
     <>
-      <BurgerMenu></BurgerMenu>
-      <Home></Home>
-      <About></About>
-      <Contact></Contact>
+      <RouterProvider router={router}></RouterProvider>
     </>
   );
 }

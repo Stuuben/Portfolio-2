@@ -8,6 +8,8 @@ import {
   faGithubSquare,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import React from "react";
+import BurgerMenu from "../components/BurgerMenu";
 library.add(fab, faGithubSquare);
 library.add(fab, faLinkedin);
 

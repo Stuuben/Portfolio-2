@@ -1,5 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import "../scss/Contact.scss";
+import React from "react";
 
 export const Contact = () => {
   const [userInput, setUserInput] = useState("");

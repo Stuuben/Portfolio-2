@@ -1,3 +1,4 @@
+import React from "react";
 import "../scss/About.scss";
 
 export const About = () => {

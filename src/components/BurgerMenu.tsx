@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "../scss/BurgerMenu.scss";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // to change burger classes
@@ -33,16 +35,22 @@ const Navbar = () => {
         <div className="bar">
           <ul>
             <li>
-              <a href="home">Home</a>
+              <Link onClick={updateMenu} to="/">
+                Home
+              </Link>
             </li>
             <li>
-              <a href="about">About</a>
+              <Link onClick={updateMenu} to="/about">
+                About
+              </Link>
             </li>
             <li>
               <a href="skills">Skills</a>
             </li>
             <li>
-              <a href="contact">Contact</a>
+              <Link onClick={updateMenu} to="/contact">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
