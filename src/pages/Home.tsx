@@ -10,6 +10,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
 import BurgerMenu from "../components/BurgerMenu";
+import { About } from "./About";
+import { downloadCV } from "../components/DownloadCV";
+import { Skills } from "./Skills";
+import { Prodjects } from "./Projects";
 library.add(fab, faGithubSquare);
 library.add(fab, faLinkedin);
 
@@ -23,12 +27,18 @@ export const Home = () => {
         <p>Hi, i'm Adam!</p>
         <h2>FrontEnd Developer</h2>
         <div className="icons-wrapper">
-          <FontAwesomeIcon className="cv-icon" icon={["fas", "align-right"]} />
+          <FontAwesomeIcon
+            onClick={downloadCV}
+            className="cv-icon"
+            icon={["fas", "align-right"]}
+            title="Download CV"
+          />
 
           <a href={"https://github.com/Stuuben"}>
             <FontAwesomeIcon
               className="github-icon"
               icon={["fab", "github-square"]}
+              title="Github"
             />
           </a>
 
@@ -36,10 +46,14 @@ export const Home = () => {
             <FontAwesomeIcon
               className="linkedin-icon"
               icon={["fab", "linkedin"]}
+              title="LinkedIn"
             />
           </a>
         </div>
       </div>
+      <About></About>
+      <Skills></Skills>
+      <Prodjects></Prodjects>
     </div>
   );
 };

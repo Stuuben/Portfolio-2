@@ -4,7 +4,7 @@ import "../scss/About.scss";
 export const About = () => {
   return (
     <div className="about">
-      <h3>About</h3>
+      {/* <h3>About</h3> */}
       <p className="about-me">
         Hej! Jag heter Adam Stuborn. Jag studerar för närvarnade på
         Medieinstitutet i Stockholm för att bli Frontend utvecklare. Söker
