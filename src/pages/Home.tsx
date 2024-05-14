@@ -13,47 +13,49 @@ import BurgerMenu from "../components/BurgerMenu";
 import { About } from "./About";
 import { downloadCV } from "../components/DownloadCV";
 import { Skills } from "./Skills";
-import { Prodjects } from "./Projects";
+import { Projects } from "./Projects";
 library.add(fab, faGithubSquare);
 library.add(fab, faLinkedin);
 
 export const Home = () => {
   return (
     <div className="home-wrapper">
-      <div className="img-container">
-        <div className="me-img"></div>
-      </div>
-      <div className="content">
-        <p>Hi, i'm Adam!</p>
-        <h2>FrontEnd Developer</h2>
-        <div className="icons-wrapper">
-          <FontAwesomeIcon
-            onClick={downloadCV}
-            className="cv-icon"
-            icon={["fas", "align-right"]}
-            title="Download CV"
-          />
-
-          <a href={"https://github.com/Stuuben"}>
-            <FontAwesomeIcon
-              className="github-icon"
-              icon={["fab", "github-square"]}
-              title="Github"
-            />
-          </a>
-
-          <a href={"https://www.linkedin.com/in/adam-stuborn-8b61a524b/"}>
-            <FontAwesomeIcon
-              className="linkedin-icon"
-              icon={["fab", "linkedin"]}
-              title="LinkedIn"
-            />
-          </a>
+      <div className="home-hero">
+        <div className="img-container">
+          <div className="me-img"></div>
         </div>
+        <div className="content">
+          <p>Hi, i'm Adam!</p>
+          <h2>FrontEnd Developer</h2>
+          <div className="icons-wrapper">
+            <FontAwesomeIcon
+              onClick={downloadCV}
+              className="cv-icon"
+              icon={["fas", "align-right"]}
+              title="Download CV"
+            />
+
+            <a href={"https://github.com/Stuuben"}>
+              <FontAwesomeIcon
+                className="github-icon"
+                icon={["fab", "github-square"]}
+                title="Github"
+              />
+            </a>
+
+            <a href={"https://www.linkedin.com/in/adam-stuborn-8b61a524b/"}>
+              <FontAwesomeIcon
+                className="linkedin-icon"
+                icon={["fab", "linkedin"]}
+                title="LinkedIn"
+              />
+            </a>
+          </div>
+        </div>
+        <About></About>
       </div>
-      <About></About>
       <Skills></Skills>
-      <Prodjects></Prodjects>
+      <Projects></Projects>
     </div>
   );
 };

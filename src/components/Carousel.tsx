@@ -3,10 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const settings = {
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 3000,
-  slidesToShow: 10,
+  slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 100, // Shorter interval for a more dynamic feel
@@ -20,24 +20,24 @@ const settings = {
     {
       breakpoint: 1024, // For screens smaller than 1024px
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         infinite: true,
-        dots: true,
+        dots: false,
       },
     },
     {
       breakpoint: 600, // For screens smaller than 600px
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 4,
         slidesToScroll: 1,
-        initialSlide: 2,
+        infinite: true,
       },
     },
     {
       breakpoint: 480, // For screens smaller than 480px
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 4,
         slidesToScroll: 1,
       },
     },

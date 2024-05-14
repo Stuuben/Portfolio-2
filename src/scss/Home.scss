@@ -83,7 +83,7 @@ h2 {
   align-items: center;
 }
 .slider-wrapper {
-  width: 400px;
+  width: 350px;
   padding-top: 2rem;
 }
 
@@ -93,7 +93,7 @@ h2 {
   justify-content: center;
   align-items: center;
   padding-top: 4rem;
-  border: 1px solid black;
+
   // background-image: url(/public/b2fb21f206c56acc2007ed7e587d9770.jpg);
   // background-size: cover;
   // color: white;
@@ -119,6 +119,17 @@ h2 {
 
 .description {
   text-align: center;
-  padding: 1.5rem;
-  max-width: 700px;
+  max-width: 390px;
+  margin-bottom: 2rem;
+  padding: 24px;
+}
+
+.link {
+  color: rgb(236, 238, 239);
+}
+.home-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
