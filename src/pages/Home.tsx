@@ -14,6 +14,7 @@ import { About } from "./About";
 import { downloadCV } from "../components/DownloadCV";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
+import { Contact } from "./Contact";
 library.add(fab, faGithubSquare);
 library.add(fab, faLinkedin);
 
@@ -56,6 +57,7 @@ export const Home = () => {
       </div>
       <Skills></Skills>
       <Projects></Projects>
+      <Contact></Contact>
     </div>
   );
 };
