@@ -1,11 +1,13 @@
 .contact-wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 3rem;
 }
 
 input {
   background-color: rgb(37, 39, 53);
   border: 1px solid black;
+
   color: white;
   width: 100%;
   ::placeholder {
@@ -24,6 +26,9 @@ textarea {
 }
 form {
   min-width: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 2px;
 }
 
 .form-wrapper {
@@ -54,11 +59,27 @@ form {
 }
 
 .form-wrapper {
-  padding: 4rem;
+  padding: 1px;
+  background: rgba(255, 255, 255, 0.146);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 1rem;
+
   @media screen and (min-width: 680px) {
     width: 80%;
   }
   @media screen and (min-width: 1200px) {
+    max-width: 500px;
+  }
+}
+
+.contact-text {
+  max-width: 300px;
+  text-align: center;
+  @media screen and (min-width: 680px) {
     max-width: 500px;
   }
 }
