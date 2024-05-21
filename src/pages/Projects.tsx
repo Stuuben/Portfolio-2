@@ -1,12 +1,13 @@
+import "../scss/Projects.scss";
+
 export const Projects = () => {
   return (
     <div className="projects-wrapper">
       <h3 style={{ textAlign: "center", paddingBottom: "1rem" }}>Projects</h3>
       <div className="projects-inner">
-        {" "}
         <div className="project-item">
           <div className="center">
-            <h3>Examensarbete</h3>
+            <h3 className="project-title">Examensarbete</h3>
             <img src="/jstuub.png" alt="Josefins hemsida" width={340} />
 
             <p className="description">
@@ -30,13 +31,7 @@ export const Projects = () => {
         </div>
         <div className="project-item">
           <div className="center">
-            <a
-              className="link"
-              rel="stylesheet"
-              href="https://josefinstuborn.netlify.app/"
-            >
-              Examensarbete
-            </a>
+            <h3 className="project-title">Examensarbete</h3>
             <img src="/jstuub.png" alt="Josefins hemsida" width={340} />
 
             <p className="description">
@@ -47,6 +42,15 @@ export const Projects = () => {
               utformad för att ge besökarna en djupare förståelse för hennes
               konstnärliga uttryck och processer.
             </p>
+            <button className="button-project">
+              <a
+                className="link"
+                href="https://josefinstuborn.netlify.app/"
+                target="_blank"
+              >
+                Gå till hemsida
+              </a>
+            </button>
           </div>
         </div>
       </div>
