@@ -12,7 +12,7 @@ export const Skills = () => {
   ];
 
   return (
-    <div>
+    <div style={{ marginBottom: "7rem" }}>
       <h3 style={{ textAlign: "center" }}>Skills</h3>
       <div className="carousel">
         <Carousel images={images} />

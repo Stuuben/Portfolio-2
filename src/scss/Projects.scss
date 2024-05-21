@@ -4,11 +4,25 @@
   justify-content: center;
   align-items: center;
   padding-top: 4rem;
+  margin-bottom: 4rem;
 
   // background-image: url(/public/b2fb21f206c56acc2007ed7e587d9770.jpg);
   // background-size: cover;
   // color: white;
+  // background: rgb(2, 0, 36);
+  // background: linear-gradient(
+  //   rgba(47, 44, 59, 1) 0%,
+  //   rgb(7, 7, 75) 40%,
+  //   rgba(47, 44, 59, 1) 100%
+  // );
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    rgba(47, 44, 59, 1) 0%,
+    rgb(40, 40, 74) 40%,
+    rgba(47, 44, 59, 1) 100%
+  );
 }
+
 .projects-inner {
   max-width: 800px;
   // border: 1px solid red;
@@ -57,7 +71,6 @@
 }
 
 .description {
-  text-align: center;
   max-width: 390px;
   margin-bottom: 1rem;
   padding-top: 1rem;
