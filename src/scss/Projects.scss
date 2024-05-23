@@ -136,3 +136,10 @@ $showBacksideZoo: true !default;
   justify-content: center;
   align-items: end;
 }
+
+.description-wrapper {
+  display: flex;
+  height: 190px;
+  flex-direction: column;
+  align-items: center;
+}

@@ -55,15 +55,18 @@ export const Projects = () => {
             </div>
           ) : (
             <div className={`backside ${showBacksideExamen ? "visible" : ""}`}>
-              <h4 className="project-title">Examensarbete</h4>
-              <p className="description-examen">
-                Som en del av mitt examensarbete har jag utvecklat en webbaserad
-                konstnärlig portfolio för min syster. Syftet med detta projekt
-                var att skapa en dynamisk och estetiskt tilltalande plattform
-                där hon kan visa upp och dela med sig av sin konst. Webbplatsen
-                är utformad för att ge besökarna en djupare förståelse för
-                hennes konstnärliga uttryck och processer.
-              </p>
+              <div className="description-wrapper">
+                <h4 className="project-title">Examensarbete</h4>
+                <p className="description-examen">
+                  Som en del av mitt examensarbete har jag utvecklat en
+                  webbaserad konstnärlig portfolio för min syster. Syftet med
+                  detta projekt var att skapa en dynamisk och estetiskt
+                  tilltalande plattform där hon kan visa upp och dela med sig av
+                  sin konst. Webbplatsen är utformad för att ge besökarna en
+                  djupare förståelse för hennes konstnärliga uttryck och
+                  processer.
+                </p>
+              </div>
               <div className="button-wrapper">
                 <button className="button-project">
                   <a
@@ -94,11 +97,13 @@ export const Projects = () => {
             </div>
           ) : (
             <div className={`backside ${showBacksideZoo ? "visible" : ""}`}>
-              <h4 className="project-title">The Zoo</h4>
-              <p className="description">
-                Inlämingsuppgift i skolan där vi skulle hämta djur från ett api
-                och sedan hålla koll på när djuren ska matas
-              </p>
+              <div className="description-wrapper">
+                <h4 className="project-title">The Zoo</h4>
+                <p className="description">
+                  Inlämingsuppgift i skolan där vi skulle hämta djur från ett
+                  api och sedan hålla koll på när djuren ska matas
+                </p>
+              </div>
               <div className="button-wrapper">
                 <button className="button-project">
                   <a
@@ -129,8 +134,10 @@ export const Projects = () => {
             </div>
           ) : (
             <div className={`backside ${showBacksideGodis ? "visible" : ""}`}>
-              <h4 className="project-title">Godisbutiken</h4>
-              <p className="description">Grupparbete att bygga en webshop</p>
+              <div className="description-wrapper">
+                <h4 className="project-title">Godisbutiken</h4>
+                <p className="description">Grupparbete att bygga en webshop</p>
+              </div>
               <div className="button-wrapper">
                 <button className="button-project">
                   <a
@@ -163,11 +170,13 @@ export const Projects = () => {
             <div
               className={`backside ${showBacksideTicTacToe ? "visible" : ""}`}
             >
-              <h4 className="project-title">Tic Tac Toe!</h4>
-              <p className="description">
-                Inlämingsuppgift i skolan där vi skulle hämta djur från ett api
-                och sedan hålla koll på när djuren ska matas
-              </p>
+              <div className="description-wrapper">
+                <h4 className="project-title">Tic Tac Toe!</h4>
+                <p className="description">
+                  Inlämingsuppgift i skolan där vi skulle hämta djur från ett
+                  api och sedan hålla koll på när djuren ska matas
+                </p>
+              </div>
               <div className="button-wrapper">
                 <button className="button-project">
                   <a
@@ -175,7 +184,7 @@ export const Projects = () => {
                     href="https://github.com/Stuuben/TicTacToe"
                     target="_blank"
                   >
-                    Se Github 13 dec 2021 - 5 juni 2022
+                    Se Github
                   </a>
                 </button>
               </div>
