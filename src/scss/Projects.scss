@@ -24,21 +24,24 @@
 }
 
 .projects-inner {
-  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
   // border: 1px solid red;
   // background-color: #7974ff93;
 
   @media screen and (min-width: 800px) {
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
+
 .project-item {
   max-width: 390px;
-  display: flex;
-  flex-direction: column;
+  height: 270px;
   justify-content: center;
-  align-items: center;
   padding: 1rem;
   margin: 1rem;
   background: rgba(255, 255, 255, 0.146);
@@ -48,23 +51,20 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
 .button-project {
-  padding: 10px;
+  padding: 8px;
   border-radius: 5px;
-  background-color: rgb(0, 183, 255);
+  background-color: rgb(60, 171, 215);
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-/* Hover Effect */
 .button-project:hover {
-  // background-color: #1271ca;
-  // box-shadow: 0 1px 10px 3px #1269c6;
   background-color: rgb(1, 137, 190);
 }
 
-/* Focus State */
 .button-project:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
@@ -75,8 +75,64 @@
   margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding: 1rem;
+}
+.description-examen {
+  font-size: 14px;
 }
 
 .project-title {
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+.frontside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+$showBacksideZoo: true !default;
+@mixin fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.6s;
+}
+
+@mixin fade-out {
+  opacity: 0;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.6s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.backside {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+
+  @if $showBacksideZoo {
+    @include fade-in;
+  } @else {
+    @include fade-out;
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
