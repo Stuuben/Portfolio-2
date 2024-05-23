@@ -6,6 +6,7 @@ export const Projects = () => {
   const [showBacksideExamen, setShowBacksideExamen] = useState(true);
   const [showBacksideGodis, setShowBacksideGodis] = useState(true);
   const [showBacksideTicTacToe, setShowBacksideTicTacToe] = useState(true);
+  const [showBacksideResturant, setShowBacksideResturant] = useState(true);
   const handleMouseOverZoo = () => {
     console.log("over zoo");
 
@@ -33,6 +34,12 @@ export const Projects = () => {
   };
   const handleMouseLeaveTicTacToe = () => {
     setShowBacksideTicTacToe(true);
+  };
+  const handleMouseOverResturant = () => {
+    setShowBacksideResturant(false);
+  };
+  const handleMouseLeaveResturant = () => {
+    setShowBacksideResturant(true);
   };
 
   return (
@@ -182,6 +189,45 @@ export const Projects = () => {
                   <a
                     className="link"
                     href="https://github.com/Stuuben/TicTacToe"
+                    target="_blank"
+                  >
+                    Se Github
+                  </a>
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+        <div
+          className="project-item"
+          onMouseOver={() => handleMouseOverResturant()}
+          onMouseLeave={() => handleMouseLeaveResturant()}
+        >
+          {showBacksideResturant ? (
+            <div className="frontside">
+              <img
+                src="/resturant.png"
+                alt="Josefins hemsida"
+                width={340}
+                height={240}
+              />
+            </div>
+          ) : (
+            <div
+              className={`backside ${showBacksideResturant ? "visible" : ""}`}
+            >
+              <div className="description-wrapper">
+                <h4 className="project-title">The Resturant</h4>
+                <p className="description">
+                  Inlämingsuppgift i skolan där vi skulle hämta djur från ett
+                  api och sedan hålla koll på när djuren ska matas
+                </p>
+              </div>
+              <div className="button-wrapper">
+                <button className="button-project">
+                  <a
+                    className="link"
+                    href="https://github.com/annaboye/therestaurant-react"
                     target="_blank"
                   >
                     Se Github
