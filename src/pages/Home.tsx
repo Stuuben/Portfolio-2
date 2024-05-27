@@ -8,7 +8,7 @@ import {
   faGithubSquare,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import React from "react";
+import React, { useRef } from "react";
 import BurgerMenu from "../components/BurgerMenu";
 import { About } from "./About";
 import { downloadCV } from "../components/DownloadCV";
@@ -57,6 +57,7 @@ export const Home = () => {
       </div>
       <Skills></Skills>
       <Projects></Projects>
+
       <Contact></Contact>
     </div>
   );

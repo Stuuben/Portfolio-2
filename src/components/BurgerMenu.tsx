@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "../scss/BurgerMenu.scss";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -8,6 +8,11 @@ const Navbar = () => {
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
   const [menu_class, setMenuClass] = useState("menu hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
+
+  const scrollToSection = (pixels: number) => {
+    window.scrollTo(0, pixels);
+    updateMenu();
+  };
 
   // toggle burger menu change
   const updateMenu = () => {
@@ -35,22 +40,14 @@ const Navbar = () => {
         <div className="bar">
           <ul>
             <li>
-              <Link onClick={updateMenu} to="/">
-                Home
-              </Link>
+              <div onClick={() => scrollToSection(0)}>Home</div>
             </li>
             <li>
-              <Link onClick={updateMenu} to="/about">
-                About
-              </Link>
+              <div onClick={() => scrollToSection(1000)}>Skills</div>
             </li>
+            <li onClick={() => scrollToSection(1300)}>Projects</li>
             <li>
-              <a href="skills">Skills</a>
-            </li>
-            <li>
-              <Link onClick={updateMenu} to="/contact">
-                Contact
-              </Link>
+              <div onClick={() => scrollToSection(3000)}>Contact</div>
             </li>
           </ul>
         </div>

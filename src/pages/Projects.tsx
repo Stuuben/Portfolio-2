@@ -107,8 +107,8 @@ export const Projects = () => {
               <div className="description-wrapper">
                 <h4 className="project-title">The Zoo</h4>
                 <p className="description">
-                  Inlämingsuppgift i skolan där vi skulle hämta djur från ett
-                  api och sedan hålla koll på när djuren ska matas
+                  Inlämingsuppgift där vi skulle hämta djur från ett api och
+                  sedan hålla koll på när djuren ska matas i React
                 </p>
               </div>
               <div className="button-wrapper">
@@ -143,7 +143,9 @@ export const Projects = () => {
             <div className={`backside ${showBacksideGodis ? "visible" : ""}`}>
               <div className="description-wrapper">
                 <h4 className="project-title">Godisbutiken</h4>
-                <p className="description">Grupparbete att bygga en webshop</p>
+                <p className="description">
+                  Grupparbete, att bygga en webshop i React
+                </p>
               </div>
               <div className="button-wrapper">
                 <button className="button-project">
@@ -168,7 +170,7 @@ export const Projects = () => {
             <div className="frontside">
               <img
                 src="/tictactoe.png"
-                alt="Josefins hemsida"
+                alt="Tic Tac Toe!"
                 width={340}
                 height={240}
               />
@@ -180,8 +182,7 @@ export const Projects = () => {
               <div className="description-wrapper">
                 <h4 className="project-title">Tic Tac Toe!</h4>
                 <p className="description">
-                  Inlämingsuppgift i skolan där vi skulle hämta djur från ett
-                  api och sedan hålla koll på när djuren ska matas
+                  Inlämningsuppgift i att skapa spelet Tic Tac Toe i Vue
                 </p>
               </div>
               <div className="button-wrapper">
@@ -207,7 +208,7 @@ export const Projects = () => {
             <div className="frontside">
               <img
                 src="/resturant.png"
-                alt="Josefins hemsida"
+                alt="Resturant"
                 width={340}
                 height={240}
               />
@@ -219,8 +220,7 @@ export const Projects = () => {
               <div className="description-wrapper">
                 <h4 className="project-title">The Resturant</h4>
                 <p className="description">
-                  Inlämingsuppgift i skolan där vi skulle hämta djur från ett
-                  api och sedan hålla koll på när djuren ska matas
+                  Grupparbete, Skapa ett bokningssystem för en resturang i React
                 </p>
               </div>
               <div className="button-wrapper">

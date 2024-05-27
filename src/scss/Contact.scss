@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-
   align-items: center;
   margin-top: 3rem;
   padding-bottom: 6rem;
@@ -74,7 +73,7 @@ button {
   margin: 1rem;
 
   @media screen and (min-width: 390px) {
-    width: 390px;
+    width: 373px;
   }
   @media screen and (min-width: 768px) {
     width: 600px;
@@ -84,10 +83,55 @@ button {
 .contact-text {
   width: 390px;
   text-align: center;
+  padding: 1rem;
   @media screen and (min-width: 390px) {
     width: 390px;
   }
   @media screen and (min-width: 768px) {
     width: 600px;
+  }
+}
+
+// .icons-wrapper {
+//   padding: 2rem;
+//   .link-p {
+//     font-size: 16px;
+//     margin: 10px;
+//   }
+// }
+// .icons-inner-wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   padding-right: 4rem;
+// }
+.icons-box {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+}
+
+.link-p {
+  display: flex;
+  align-items: center;
+}
+
+.icons-inner-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 4rem;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 50px;
+  padding: 0.5rem;
+  color: rgb(0, 183, 255);
+  &:hover {
+    transition: 0.3s ease;
+    transform: scale(1.1);
   }
 }
