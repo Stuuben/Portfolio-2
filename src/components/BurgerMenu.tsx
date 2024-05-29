@@ -1,7 +1,5 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "../scss/BurgerMenu.scss";
-import React from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // to change burger classes
@@ -34,24 +32,28 @@ const Navbar = () => {
           <div className={burger_class}></div>
           <div className={burger_class}></div>
         </div>
-      </nav>
-
-      <div className={menu_class}>
-        <div className="bar">
-          <ul>
-            <li>
-              <div onClick={() => scrollToSection(0)}>Home</div>
-            </li>
-            <li>
-              <div onClick={() => scrollToSection(1000)}>Skills</div>
-            </li>
-            <li onClick={() => scrollToSection(1300)}>Projects</li>
-            <li>
-              <div onClick={() => scrollToSection(3000)}>Contact</div>
-            </li>
-          </ul>
+        <div className={menu_class}>
+          <div className="bar">
+            <ul>
+              <li>
+                <div className="nav-link" onClick={() => scrollToSection(1000)}>
+                  Skills
+                </div>
+              </li>
+              <li>
+                <div className="nav-link" onClick={() => scrollToSection(1300)}>
+                  Projects
+                </div>
+              </li>
+              <li>
+                <div className="nav-link" onClick={() => scrollToSection(3000)}>
+                  Contact
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </div>
   );
 };
