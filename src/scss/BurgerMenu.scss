@@ -38,7 +38,6 @@ nav {
 
 .menu {
   width: 100%;
-  background-color: rgba(154, 181, 240, 0.958);
   position: absolute;
   top: 5em;
   left: 0;
@@ -68,6 +67,7 @@ nav {
   display: inherit;
   transition: ease 1;
   animation: slideDown 0.3s ease-in-out;
+  background-color: rgb(54, 55, 103);
 }
 
 @keyframes slideDown {
