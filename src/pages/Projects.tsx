@@ -7,6 +7,7 @@ export const Projects = () => {
   const [showBacksideGodis, setShowBacksideGodis] = useState(true);
   const [showBacksideTicTacToe, setShowBacksideTicTacToe] = useState(true);
   const [showBacksideResturant, setShowBacksideResturant] = useState(true);
+  const [showBacksideGenerator, setShowBacksideGenerator] = useState(true);
   const handleMouseOverZoo = () => {
     console.log("over zoo");
 
@@ -40,6 +41,13 @@ export const Projects = () => {
   };
   const handleMouseLeaveResturant = () => {
     setShowBacksideResturant(true);
+  };
+
+  const handleMouseOverGenerator = () => {
+    setShowBacksideGenerator(false);
+  };
+  const handleMouseLeaveGenerator = () => {
+    setShowBacksideGenerator(true);
   };
 
   return (
@@ -90,6 +98,44 @@ export const Projects = () => {
         </div>
         <div
           className="project-item"
+          onMouseOver={() => handleMouseOverGenerator()}
+          onMouseLeave={() => handleMouseLeaveGenerator()}
+        >
+          {showBacksideGenerator ? (
+            <div className="frontside">
+              <img
+                src="/generator.png"
+                alt="homepage"
+                width={340}
+                height={240}
+              />
+            </div>
+          ) : (
+            <div
+              className={`backside ${showBacksideGenerator ? "visible" : ""}`}
+            >
+              <div className="description-wrapper">
+                <h4 className="project-title">AI Image Generator</h4>
+                <p className="description">
+                  Hobby projekt som skapar en bild med AI.
+                </p>
+              </div>
+              <div className="button-wrapper">
+                <button className="button-project">
+                  <a
+                    className="link"
+                    href="https://adamstubornzoo.netlify.app/"
+                    target="_blank"
+                  >
+                    Se hemsida
+                  </a>
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+        <div
+          className="project-item"
           onMouseOver={() => handleMouseOverZoo()}
           onMouseLeave={() => handleMouseLeaveZoo()}
         >
@@ -125,6 +171,7 @@ export const Projects = () => {
             </div>
           )}
         </div>
+
         <div
           className="project-item"
           onMouseOver={() => handleMouseOverGodis()}
