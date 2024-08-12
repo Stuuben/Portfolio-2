@@ -6,7 +6,7 @@ import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 
 export const Contact = () => {
   return (
-    <div className="contact-wrapper">
+    <div id="contact" className="contact-wrapper">
       <h3>Contact</h3>
       <p className="contact-text">
         Kontakta mig på LinkedIn, mail eller via formuläret.

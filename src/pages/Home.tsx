@@ -8,8 +8,6 @@ import {
   faGithubSquare,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import React, { useRef } from "react";
-import BurgerMenu from "../components/BurgerMenu";
 import { About } from "./About";
 import { downloadCV } from "../components/DownloadCV";
 import { Skills } from "./Skills";
@@ -20,7 +18,7 @@ library.add(fab, faLinkedin);
 
 export const Home = () => {
   return (
-    <div className="home-wrapper">
+    <div id="home" className="home-wrapper">
       <div className="home-hero">
         <div className="img-container">
           <div className="me-img"></div>
@@ -53,12 +51,18 @@ export const Home = () => {
             </a>
           </div>
         </div>
-        <About></About>
+        <About />
       </div>
-      <Skills></Skills>
-      <Projects></Projects>
-
-      <Contact></Contact>
+      <div
+        id="projects-anchor"
+        style={{
+          visibility: "hidden",
+          marginTop: 100,
+        }}
+      />
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 };
